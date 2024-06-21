@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* Your existing CSS code here */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.lbody {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top: 9vh;
+    background-image: url("/CalgaryHacks24/images/test4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-container {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding-bottom: 6vw;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.container {
+    /* existing styles */
+    position: relative;
+    z-index: 1;
+}
+
+.container .content {
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.container .content h3 {
+    font-size: 30px;
+    color: #333;
+}
+
+.container .content h3 span {
+    background: blue;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.container .content h1 {
+    font-size: 50px;
+    color: #333;
+}
+
+.container .content h1 span {
+    color: blue;
+}
+
+.header {
+    padding-top: 2%;
+    padding-left: 33%;
+    font-size: 55px;
+}
+
+.container .content p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container .content .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    background: #333;
+    color: #fff;
+    margin: 0 5px;
+    text-transform: capitalize;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.container .content .btn:hover {
+    background: blue;
+}
+
+.form-container {
+    min-height: calc(100vh - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.form-container form {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    background: #fff;
+    text-align: center;
+    width: 500px;
+    margin-top: 280px; /* Adjust this value to move the form down */
+    animation: fadeIn 1s ease-in-out;
+    outline: none; /* Add this line to remove the outline when clicking */
+}
+
+.form-container form h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-container form input,
+.form-container form select {
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #eee;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+
+.form-container form select option {
+    background: #fff;
+}
+
+.form-container form .form-btn {
+    background: #a79b9b;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    transition: background 0.3s ease;
+}
+
+.form-container form .form-btn:hover {
+    background: crimson;
+    color: #fff;
+}
+
+.form-container form p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.form-container form p a {
+    color: rgb(0, 0, 0);
+}
+
+.form-container form .error-msg {
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.animation-group {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add styles for the new button */
+.form-container form .animation-btn {
+    background: #a79b9b;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    transition: background 0.3s ease;
+}
+
+.form-container form .animation-btn:hover {
+    background: #b8c9bf;
+}
+

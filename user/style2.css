@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+   --green:olive;
+   --black:#333;
+   --white:#fff;
+   --bg-color:#eee;
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --border:.1rem solid var(--black);
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+
+ /* the button styling so that its a bigger button full length middle green text is white */
+ .btn{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    padding:1rem 3rem;
+    background: var(--green);
+    color:var(--white);
+    /* center the actaul text of the button */
+    text-align: center;
+    background-color: #27ae60;
+    color: #27ae60;
+    outline: black;
+ }
+
+ /*hovering over the button */
+
+
+ /* styling the message */
+ .message{
+    display: block;
+    background: var(--bg-color);
+    padding:1.5rem 1rem;
+    font-size: 2rem;
+    color:var(--black);
+    margin-bottom: 2rem;
+ }
+
+ .container{
+    max-width: 1200px;
+    padding:2rem;
+    margin:0 auto;
+ }
+
+/* center the update box */
+ .admin-machine-form-container.centered{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+
+ }
+
+ .admin-machine-form-container form{
+    max-width: 50rem;
+    margin:0 auto;
+    padding:2rem;
+    border-radius: .5rem;
+    background: var(--bg-color);
+ }
+
+ .admin-machine-form-container form h3{
+    text-transform: uppercase;
+    color:var(--black);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+ }
+
+ .admin-machine-form-container form .box{
+    width: 100%;
+    border-radius: .5rem;
+    padding:1.2rem 1.5rem;
+    font-size: 1.7rem;
+    /* create distance between the all the input types */
+    margin:1rem 0;
+    /*white box around the add photo */
+    background: var(--white);
+    text-transform: none;
+ }
+
+ .admin-machine-form-container form input,
+ .admin-machine-form-container form select{
+    width: 100%;
+    padding:10px 15px;
+    font-size: 17px;
+    margin:8px  0;
+    background: #eee;
+    border-radius: 5px;
+}
+
+/* set background to be white for option*/
+.admin-machine-form-container form select option{
+    background: #fff
+}
+
+
+.announcement-display{
+   margin:2rem 0;
+}
+
+.announcement-display .announcement-display-table{
+   width: 100%;
+   text-align: center;
+
+}
+
+.announcement-display .announcement-display-table thead{
+   background: var(--bg-color);
+
+}
+
+.announcement-display .announcement-display-table th{
+   padding: 1.2rem;
+   font-size: 2rem;
+   text-align: center;
+   /* black underline below the column names */
+}
+
+.announcement-display .announcement-display-table td{
+   padding: 1.2rem;
+   font-size: 2rem;
+   /* black underline below the column names */
+   border-bottom: var(--border);
+}
+
+.announcement-display .announcement-display-table .btn:first-child{
+   margin-top: 0;
+}
+
+.announcement-display .announcement-display-table .btn:last-child{
+   background: crimson;
+}
+
+.announcement-display .announcement-display-table .btn:last-child:hover{
+   background: var(--black);
+}
+
+
+
+/* might not need */
+@media (max-width:991px){
+   .announcement-display{
+      overflow-y: scroll;
+   }
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+   .announcement-display .announcement-display-table{
+      width: 80rem;
+
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+}
+
+
+
+
+
+
+
+
+
