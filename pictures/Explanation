@@ -1,1 +1,15 @@
-test
+LOGIN:
+The login image shows the login page for our website where users can login to their accounts or even create new ones
+
+BOOK:
+The booking page allows users to book financial appointments with advisors
+
+CALC:
+The calculator page offers a few different calculators to allow users to calculate interest rates, Annuity Future Value, etc.
+
+TRANSACTIONS:
+The transactions page allows a user to enter in any purchase they made to allow them to see an overall breakdown of their spending habits for each month
+
+PICHART:
+This page allows users to see the monthly breakdown of their purchase history, it allows users to filter each month and see not only how much they spent that month but also 
+the breakdown of their spending habits; such as food, clothing, travel etc.
